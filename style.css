@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.hide-header {
+    transform: translateY(-100%);
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#privacy-modal .max-h-\[80vh\]::-webkit-scrollbar {
+    width: 8px;
+}
+#privacy-modal .max-h-\[80vh\]::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+#privacy-modal .max-h-\[80vh\]::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+}
+#privacy-modal .max-h-\[80vh\]::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
